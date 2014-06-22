@@ -162,5 +162,7 @@ for (i in 1:length(dataSet)) {names(dataSet)[i] <- newColNames[i]}
 write.table(dataSet,".\\data\\tidydata.txt")
 
 ## Step 11 - Compute the average of each variable for each activity and each subject
+MeanData <- aggregate(dataSet[,1:86], by=list(Activity = dataSet$activityName, Subject = dataSet$subject), FUN=mean)
 
 ## Step 12 - Write Tidy data set of the dataset of averages computed
+write.table(MeanData,".\\data\\FinalData.txt")
