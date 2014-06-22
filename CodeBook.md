@@ -1,12 +1,3 @@
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-This submission is the code, data for the project of "Getting and Cleaning Data" course offered through Coursera
-
-This demonstrates an ability to collect, work with, and clean a data set. 
-A tidy data set that can be used for later analysis is the result.
-
-Submitted by - Sastry Penumarthy, Submission date - 6/22/2014
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
 This file describes the variables, the data, and the transformations performed by me to clean up the data. IT explains how 
 the run_analysis.R script works to generate the Tidy data file
 
@@ -14,13 +5,11 @@ Script name - run_analysis.R - Creates a Tidy data set from a set of data files
 
 Data file location -
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-Other information -
-1. README.md - Provides information on how the run_analysis.R script works
-2. CodeBook.md - Describes the variables, data and transformations 
-                 for obtaining the tidy data file from the raw data files
+
 Objective - Generate a independent tidy data set with the average of each variable for each activity and each subject
 Input - Zip file containing the data
 output - Text file containing the tidy data set of averages of a set of 86 variables for 6 activities and 30 subjects
+
 The following steps identify the processing steps to arrive at the final tidy data file -
 Step 1 - Download the Zip file to data folder - check if data folder exists
 The existence of the data folder in the current working directory is ensured first, if it does not exist it is created
